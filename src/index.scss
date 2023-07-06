@@ -1,13 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @font-face {
   font-family: kanit;
   src: url("/fonts/font-kanit/Kanit-Light.ttf");
-}
-
-:root {
 }
 
 html {
@@ -23,4 +20,7 @@ html {
 body {
   font-family: kanit;
   font-size: 1.6rem;
+  color: #000000;
+  text-decoration: none;
+  font-style: normal;
 }
