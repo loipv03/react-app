@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: kanit;
+  src: url("/fonts/font-kanit/Kanit-Light.ttf");
+}
+
+:root {
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: kanit;
+  font-size: 1.6rem;
+}
