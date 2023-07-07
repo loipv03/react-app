@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./import";
+import { Home, Button } from "./import";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
           <Route index element={<Home />} />
         </Route>
         <Route path="/admin">
-          <Route index element />
+          <Route index element={<Button />} />
         </Route>
       </Routes>
     </div>
