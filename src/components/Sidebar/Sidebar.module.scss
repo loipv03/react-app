@@ -1,0 +1,67 @@
+.sidebar {
+  font-family: IBM;
+  font-size: 1.8rem;
+  padding: 20px 0 0 0;
+  width: 225px;
+  height: calc(100vh);
+
+  .navbar {
+    width: 100%;
+    height: 190px;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      li {
+        width: 100%;
+        height: 48px;
+        padding: 8px;
+        a {
+          list-style: 0;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 32px repeat(auto-fit, minmax(0, 1fr));
+          gap: 0 10px;
+          align-items: center;
+          color: #000;
+
+          svg {
+            height: 32px;
+            width: 32px;
+          }
+
+          &.active {
+            fill: rgb(254, 44, 85);
+            color: rgb(254, 44, 85);
+          }
+        }
+        &:hover {
+          background-color: #ececec;
+        }
+      }
+    }
+  }
+
+  .following {
+    margin-top: 20px;
+    padding-top: 20px;
+    position: relative;
+    .following__title {
+      color: rgba(22, 24, 35, 0.75);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.093px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      top: 0;
+      height: 1px;
+      background: rgba(83, 87, 108, 0.101);
+    }
+  }
+}

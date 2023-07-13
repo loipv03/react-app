@@ -1,6 +1,6 @@
-type Props = {};
+// type Props = {};
 
-const Button = (props: Props) => {
+const Button = () => {
   return (
     <div>
       <div className="">Button</div>

@@ -1,0 +1,16 @@
+.main {
+  width: 1400px;
+  display: grid;
+  grid-template-columns: 225px repeat(auto-fit, minmax(0, 1fr));
+
+  &.wFull {
+    grid-template-columns: 1fr;
+  }
+
+  .main_content {
+    width: 100%;
+    display: grid;
+    // background-color: #9b9b9b;
+    height: 50vh;
+  }
+}
